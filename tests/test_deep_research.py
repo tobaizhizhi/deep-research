@@ -1,17 +1,20 @@
-from deep_research import load_settings, main
+from deep_research import main
+from mini_deep_research.config import load_settings
+from mini_deep_research import config
 import pytest
 from pydantic import ValidationError
 
-from deep_research import ResearchPlan, SearchResult
+from mini_deep_research.models import ResearchPlan, SearchResult
 
 import asyncio
 from types import SimpleNamespace
 from unittest.mock import AsyncMock, Mock
 
-import deep_research as research
+from mini_deep_research import graph as research
 
 
 def test_load_settings(monkeypatch):
+    monkeypatch.setattr(config, "load_dotenv", lambda *args, **kwargs: None)
     monkeypatch.setenv("MODEL_NAME", "test-model")
     monkeypatch.setenv("MAX_SEARCH_ROUNDS", "3")
     monkeypatch.setenv("MAX_RESULTS_PER_QUERY", "4")
@@ -27,6 +30,7 @@ def test_program_can_start_without_api_call(
     monkeypatch,
     capsys,
 ):
+    monkeypatch.setattr(config, "load_dotenv", lambda *args, **kwargs: None)
     monkeypatch.setenv("MODEL_NAME", "test-model")
     monkeypatch.delenv("OPENAI_API_KEY", raising=False)
     monkeypatch.delenv("TAVILY_API_KEY", raising=False)
@@ -65,7 +69,7 @@ def test_plan_rejects_invalid_query_count(query_count):
 
 @pytest.mark.parametrize("reason", ["", " \n\t ", " 已覆盖定义和应用场景。 "])
 def test_completed_research_always_records_stop_reason(monkeypatch, reason):
-    """模型理由为空时，实际研究图仍应记录停止原因并生成一次报告。"""
+    """Researcher 子图记录非空停止原因，并且不调用 Writer。"""
     source = SearchResult(
         title="测试资料",
         url="https://example.com/langgraph",
@@ -108,7 +112,7 @@ def test_completed_research_always_records_stop_reason(monkeypatch, reason):
         "max_search_rounds": 2,
     }))
     assert result["stop_reason"].strip()
-    # 与 demo_research 相同的验收条件，并拒绝只含空白的停止原因。
+    # 验证子图返回的停止条件，并拒绝只含空白的停止原因。
     if reason.strip():
         assert result["stop_reason"] == reason.strip()
     else:

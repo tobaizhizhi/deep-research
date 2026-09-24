@@ -8,21 +8,16 @@ from time import perf_counter
 
 from markdown_it import MarkdownIt
 from pydantic import BaseModel, Field
-import traceback
 from uuid import uuid4
 
-from deep_research import (
-    create_model,
-    load_settings,
-    research_graph,
-    validate_citations,
-    setup_logging,
-    logger,
-    error_info,
+from mini_deep_research.config import (
+    OUTPUT_DIR, PROJECT_DIR, create_model, load_settings,
 )
+from mini_deep_research.graph import research_graph, validate_citations
+from mini_deep_research.log_utils import error_info, logger, setup_logging
 
 
-BASE_DIR = Path(__file__).resolve().parent
+BASE_DIR = PROJECT_DIR
 
 # 初次评测先控制规模。
 MAX_SUPERVISOR_ROUNDS = 1
@@ -425,7 +420,8 @@ async def main() -> None:
         "%Y%m%d_%H%M%S_%f"
     )
 
-    output = BASE_DIR / f"eval_results_{stamp}.jsonl"
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    output = OUTPUT_DIR / f"eval_results_{stamp}.jsonl"
     rows = []
 
     with output.open("x", encoding="utf-8") as file:
