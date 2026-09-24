@@ -1,0 +1,357 @@
+2026-09-24 17:17:36 INFO run=q1-7dc3c28b node=supervisor_plan event=start topic='-' question='LangGraph 的 StateGraph 有什么作用？' search_round=- supervisor_round=- queries=0 sources=0 findings=0 elapsed=0.00s done=- should_stop=- stop_reason='' citation_warnings=0 error_type=-
+2026-09-24 17:17:37 INFO run=q1-7dc3c28b node=supervisor_plan event=end topic='-' question='LangGraph 的 StateGraph 有什么作用？' search_round=- supervisor_round=0 queries=0 sources=0 findings=0 elapsed=3.52s done=False should_stop=False stop_reason='' citation_warnings=0 error_type=-
+2026-09-24 17:17:37 INFO run=q1-7dc3c28b node=run_researchers event=start topic='-' question='LangGraph 的 StateGraph 有什么作用？' search_round=- supervisor_round=0 queries=0 sources=0 findings=0 elapsed=0.00s done=False should_stop=False stop_reason='' citation_warnings=0 error_type=-
+2026-09-24 17:17:37 INFO run=q1-7dc3c28b node=create_plan event=start topic='解释 LangGraph 中 StateGraph 的核心作用与设计目的，包括它如何管理状态、节点和边，以及与传统图执行框架的区别。' question='原始问题：LangGraph 的 StateGraph 有什么作用？\n当前子任务：解释 LangGraph 中 StateGraph 的核心作用与设计目的，包括它如何管理状态、节点和边，以及与传统图执行框架的区别。\n只完成当前子任务，原始问题用于保留语言和限制。' search_round=- supervisor_round=- queries=0 sources=0 findings=0 elapsed=0.00s done=- should_stop=- stop_reason='' citation_warnings=0 error_type=-
+2026-09-24 17:17:38 INFO run=q1-7dc3c28b node=create_plan event=end topic='解释 LangGraph 中 StateGraph 的核心作用与设计目的，包括它如何管理状态、节点和边，以及与传统图执行框架的区别。' question='原始问题：LangGraph 的 StateGraph 有什么作用？\n当前子任务：解释 LangGraph 中 StateGraph 的核心作用与设计目的，包括它如何管理状态、节点和边，以及与传统图执行框架的区别。\n只完成当前子任务，原始问题用于保留语言和限制。' search_round=0 supervisor_round=- queries=3 sources=0 findings=0 elapsed=1.69s done=False should_stop=False stop_reason='' citation_warnings=0 error_type=-
+2026-09-24 17:17:38 INFO run=q1-7dc3c28b node=search event=start topic='解释 LangGraph 中 StateGraph 的核心作用与设计目的，包括它如何管理状态、节点和边，以及与传统图执行框架的区别。' question='原始问题：LangGraph 的 StateGraph 有什么作用？\n当前子任务：解释 LangGraph 中 StateGraph 的核心作用与设计目的，包括它如何管理状态、节点和边，以及与传统图执行框架的区别。\n只完成当前子任务，原始问题用于保留语言和限制。' search_round=0 supervisor_round=- queries=3 sources=0 findings=0 elapsed=0.00s done=False should_stop=False stop_reason='' citation_warnings=0 error_type=-
+2026-09-24 17:18:41 ERROR run=q1-7dc3c28b node=search event=error topic='解释 LangGraph 中 StateGraph 的核心作用与设计目的，包括它如何管理状态、节点和边，以及与传统图执行框架的区别。' question='原始问题：LangGraph 的 StateGraph 有什么作用？\n当前子任务：解释 LangGraph 中 StateGraph 的核心作用与设计目的，包括它如何管理状态、节点和边，以及与传统图执行框架的区别。\n只完成当前子任务，原始问题用于保留语言和限制。' search_round=0 supervisor_round=- queries=3 sources=0 findings=0 elapsed=67.55s done=False should_stop=False stop_reason='' citation_warnings=0 error_type=RuntimeError
+Traceback (most recent call last):
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 271, in __aiter__
+    async for part in self._httpcore_stream:
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpcore/_async/connection_pool.py", line 407, in __aiter__
+    raise exc from None
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpcore/_async/connection_pool.py", line 403, in __aiter__
+    async for part in self._stream:
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpcore/_async/http11.py", line 342, in __aiter__
+    raise exc
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpcore/_async/http11.py", line 334, in __aiter__
+    async for chunk in self._connection._receive_response_body(**kwargs):
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpcore/_async/http11.py", line 203, in _receive_response_body
+    event = await self._receive_event(timeout=timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpcore/_async/http11.py", line 217, in _receive_event
+    data = await self._network_stream.read(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpcore/_backends/anyio.py", line 32, in read
+    with map_exceptions(exc_map):
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ReadTimeout
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/tavily/async_tavily.py", line 258, in _search
+    response = await self._client.post("/search", content=json.dumps(data), timeout=timeout, **({"headers": override_headers} if override_headers else {}))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1859, in post
+    return await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1540, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1643, in send
+    raise exc
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1637, in send
+    await response.aread()
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpx/_models.py", line 979, in aread
+    self._content = b"".join([part async for part in self.aiter_bytes()])
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpx/_models.py", line 997, in aiter_bytes
+    async for raw_bytes in self.aiter_raw():
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpx/_models.py", line 1055, in aiter_raw
+    async for raw_stream_bytes in self.stream:
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpx/_client.py", line 176, in __aiter__
+    async for chunk in self._stream:
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 270, in __aiter__
+    with map_httpcore_exceptions():
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ReadTimeout
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/tavily/async_tavily.py", line 296, in search
+    response_dict = await self._search(query,
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/tavily/async_tavily.py", line 260, in _search
+    raise TimeoutError(timeout)
+tavily.errors.TimeoutError: Request timed out after 30.0 seconds.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/deep_research.py", line 259, in wrapped
+    update = await update
+             ^^^^^^^^^^^^
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/deep_research.py", line 704, in search
+    sources = await search_web(
+              ^^^^^^^^^^^^^^^^^
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/deep_research.py", line 405, in search_web
+    raise RuntimeError(
+RuntimeError: Tavily 搜索失败，查询：'LangGraph 与传统图执行框架 区别'TimeoutError
+2026-09-24 17:18:41 ERROR run=q1-7dc3c28b node=run_researchers event=error topic='-' question='LangGraph 的 StateGraph 有什么作用？' search_round=- supervisor_round=0 queries=0 sources=0 findings=0 elapsed=69.25s done=False should_stop=False stop_reason='' citation_warnings=0 error_type=RuntimeError
+Traceback (most recent call last):
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 271, in __aiter__
+    async for part in self._httpcore_stream:
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpcore/_async/connection_pool.py", line 407, in __aiter__
+    raise exc from None
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpcore/_async/connection_pool.py", line 403, in __aiter__
+    async for part in self._stream:
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpcore/_async/http11.py", line 342, in __aiter__
+    raise exc
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpcore/_async/http11.py", line 334, in __aiter__
+    async for chunk in self._connection._receive_response_body(**kwargs):
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpcore/_async/http11.py", line 203, in _receive_response_body
+    event = await self._receive_event(timeout=timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpcore/_async/http11.py", line 217, in _receive_event
+    data = await self._network_stream.read(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpcore/_backends/anyio.py", line 32, in read
+    with map_exceptions(exc_map):
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ReadTimeout
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/tavily/async_tavily.py", line 258, in _search
+    response = await self._client.post("/search", content=json.dumps(data), timeout=timeout, **({"headers": override_headers} if override_headers else {}))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1859, in post
+    return await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1540, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1643, in send
+    raise exc
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1637, in send
+    await response.aread()
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpx/_models.py", line 979, in aread
+    self._content = b"".join([part async for part in self.aiter_bytes()])
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpx/_models.py", line 997, in aiter_bytes
+    async for raw_bytes in self.aiter_raw():
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpx/_models.py", line 1055, in aiter_raw
+    async for raw_stream_bytes in self.stream:
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpx/_client.py", line 176, in __aiter__
+    async for chunk in self._stream:
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 270, in __aiter__
+    with map_httpcore_exceptions():
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ReadTimeout
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/tavily/async_tavily.py", line 296, in search
+    response_dict = await self._search(query,
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/tavily/async_tavily.py", line 260, in _search
+    raise TimeoutError(timeout)
+tavily.errors.TimeoutError: Request timed out after 30.0 seconds.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/deep_research.py", line 259, in wrapped
+    update = await update
+             ^^^^^^^^^^^^
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/deep_research.py", line 635, in run_researchers
+    result = await researcher_graph.ainvoke(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/langgraph/pregel/main.py", line 4090, in ainvoke
+    async for chunk in self.astream(
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3440, in astream
+    async for _ in runner.atick(
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 396, in atick
+    await arun_with_retry(
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 744, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 756, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 522, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/deep_research.py", line 259, in wrapped
+    update = await update
+             ^^^^^^^^^^^^
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/deep_research.py", line 704, in search
+    sources = await search_web(
+              ^^^^^^^^^^^^^^^^^
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/deep_research.py", line 405, in search_web
+    raise RuntimeError(
+RuntimeError: Tavily 搜索失败，查询：'LangGraph 与传统图执行框架 区别'TimeoutError
+During task with name 'search' and id '1db20d24-b2c1-ff1c-6fb9-cbd5d52b78cf'
+2026-09-24 17:18:41 ERROR run=q1-7dc3c28b stage=research status=error
+Traceback (most recent call last):
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 271, in __aiter__
+    async for part in self._httpcore_stream:
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpcore/_async/connection_pool.py", line 407, in __aiter__
+    raise exc from None
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpcore/_async/connection_pool.py", line 403, in __aiter__
+    async for part in self._stream:
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpcore/_async/http11.py", line 342, in __aiter__
+    raise exc
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpcore/_async/http11.py", line 334, in __aiter__
+    async for chunk in self._connection._receive_response_body(**kwargs):
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpcore/_async/http11.py", line 203, in _receive_response_body
+    event = await self._receive_event(timeout=timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpcore/_async/http11.py", line 217, in _receive_event
+    data = await self._network_stream.read(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpcore/_backends/anyio.py", line 32, in read
+    with map_exceptions(exc_map):
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ReadTimeout
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/tavily/async_tavily.py", line 258, in _search
+    response = await self._client.post("/search", content=json.dumps(data), timeout=timeout, **({"headers": override_headers} if override_headers else {}))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1859, in post
+    return await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1540, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1643, in send
+    raise exc
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpx/_client.py", line 1637, in send
+    await response.aread()
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpx/_models.py", line 979, in aread
+    self._content = b"".join([part async for part in self.aiter_bytes()])
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpx/_models.py", line 997, in aiter_bytes
+    async for raw_bytes in self.aiter_raw():
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpx/_models.py", line 1055, in aiter_raw
+    async for raw_stream_bytes in self.stream:
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpx/_client.py", line 176, in __aiter__
+    async for chunk in self._stream:
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 270, in __aiter__
+    with map_httpcore_exceptions():
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ReadTimeout
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/tavily/async_tavily.py", line 296, in search
+    response_dict = await self._search(query,
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/tavily/async_tavily.py", line 260, in _search
+    raise TimeoutError(timeout)
+tavily.errors.TimeoutError: Request timed out after 30.0 seconds.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/evaluate.py", line 289, in evaluate_one
+    state = await asyncio.wait_for(
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/langgraph/pregel/main.py", line 4090, in ainvoke
+    async for chunk in self.astream(
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3440, in astream
+    async for _ in runner.atick(
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 396, in atick
+    await arun_with_retry(
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 744, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 756, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 522, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/deep_research.py", line 259, in wrapped
+    update = await update
+             ^^^^^^^^^^^^
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/deep_research.py", line 635, in run_researchers
+    result = await researcher_graph.ainvoke(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/langgraph/pregel/main.py", line 4090, in ainvoke
+    async for chunk in self.astream(
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/langgraph/pregel/main.py", line 3440, in astream
+    async for _ in runner.atick(
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/langgraph/pregel/_runner.py", line 396, in atick
+    await arun_with_retry(
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/langgraph/pregel/_retry.py", line 744, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 756, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/.venv/lib/python3.12/site-packages/langgraph/_internal/_runnable.py", line 522, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/deep_research.py", line 259, in wrapped
+    update = await update
+             ^^^^^^^^^^^^
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/deep_research.py", line 704, in search
+    sources = await search_web(
+              ^^^^^^^^^^^^^^^^^
+  File "/home/lenovo/ai/study_deep_research/Simplified_version/deep_research.py", line 405, in search_web
+    raise RuntimeError(
+RuntimeError: Tavily 搜索失败，查询：'LangGraph 与传统图执行框架 区别'TimeoutError
+During task with name 'search' and id '1db20d24-b2c1-ff1c-6fb9-cbd5d52b78cf'
+During task with name 'run_researchers' and id '74b97419-17c0-d1c4-2491-709810aec800'
+2026-09-24 17:18:41 INFO run=q1-7dc3c28b stage=research status=error elapsed=72.78s
+2026-09-24 17:21:14 INFO run=q1-9bac3c5e node=supervisor_plan event=start topic='-' question='LangGraph 的 StateGraph 有什么作用？' search_round=- supervisor_round=- queries=0 sources=0 findings=0 elapsed=0.00s done=- should_stop=- stop_reason='' citation_warnings=0 error_type=-
+2026-09-24 17:21:17 INFO run=q1-9bac3c5e node=supervisor_plan event=end topic='-' question='LangGraph 的 StateGraph 有什么作用？' search_round=- supervisor_round=0 queries=0 sources=0 findings=0 elapsed=3.76s done=False should_stop=False stop_reason='' citation_warnings=0 error_type=-
+2026-09-24 17:21:17 INFO run=q1-9bac3c5e node=run_researchers event=start topic='-' question='LangGraph 的 StateGraph 有什么作用？' search_round=- supervisor_round=0 queries=0 sources=0 findings=0 elapsed=0.00s done=False should_stop=False stop_reason='' citation_warnings=0 error_type=-
+2026-09-24 17:21:17 INFO run=q1-9bac3c5e node=create_plan event=start topic='解释 LangGraph 中 StateGraph 的核心作用与设计目的，包括它如何管理状态、节点和边，以及与传统图执行框架的区别。' question='原始问题：LangGraph 的 StateGraph 有什么作用？\n当前子任务：解释 LangGraph 中 StateGraph 的核心作用与设计目的，包括它如何管理状态、节点和边，以及与传统图执行框架的区别。\n只完成当前子任务，原始问题用于保留语言和限制。' search_round=- supervisor_round=- queries=0 sources=0 findings=0 elapsed=0.00s done=- should_stop=- stop_reason='' citation_warnings=0 error_type=-
+2026-09-24 17:21:19 INFO run=q1-9bac3c5e node=create_plan event=end topic='解释 LangGraph 中 StateGraph 的核心作用与设计目的，包括它如何管理状态、节点和边，以及与传统图执行框架的区别。' question='原始问题：LangGraph 的 StateGraph 有什么作用？\n当前子任务：解释 LangGraph 中 StateGraph 的核心作用与设计目的，包括它如何管理状态、节点和边，以及与传统图执行框架的区别。\n只完成当前子任务，原始问题用于保留语言和限制。' search_round=0 supervisor_round=- queries=3 sources=0 findings=0 elapsed=1.71s done=False should_stop=False stop_reason='' citation_warnings=0 error_type=-
+2026-09-24 17:21:19 INFO run=q1-9bac3c5e node=search event=start topic='解释 LangGraph 中 StateGraph 的核心作用与设计目的，包括它如何管理状态、节点和边，以及与传统图执行框架的区别。' question='原始问题：LangGraph 的 StateGraph 有什么作用？\n当前子任务：解释 LangGraph 中 StateGraph 的核心作用与设计目的，包括它如何管理状态、节点和边，以及与传统图执行框架的区别。\n只完成当前子任务，原始问题用于保留语言和限制。' search_round=0 supervisor_round=- queries=3 sources=0 findings=0 elapsed=0.00s done=False should_stop=False stop_reason='' citation_warnings=0 error_type=-
+2026-09-24 17:21:36 INFO run=q1-9bac3c5e node=search event=end topic='解释 LangGraph 中 StateGraph 的核心作用与设计目的，包括它如何管理状态、节点和边，以及与传统图执行框架的区别。' question='原始问题：LangGraph 的 StateGraph 有什么作用？\n当前子任务：解释 LangGraph 中 StateGraph 的核心作用与设计目的，包括它如何管理状态、节点和边，以及与传统图执行框架的区别。\n只完成当前子任务，原始问题用于保留语言和限制。' search_round=1 supervisor_round=- queries=3 sources=14 findings=0 elapsed=17.04s done=False should_stop=False stop_reason='' citation_warnings=0 error_type=-
+2026-09-24 17:21:36 INFO run=q1-9bac3c5e node=extract_findings event=start topic='解释 LangGraph 中 StateGraph 的核心作用与设计目的，包括它如何管理状态、节点和边，以及与传统图执行框架的区别。' question='原始问题：LangGraph 的 StateGraph 有什么作用？\n当前子任务：解释 LangGraph 中 StateGraph 的核心作用与设计目的，包括它如何管理状态、节点和边，以及与传统图执行框架的区别。\n只完成当前子任务，原始问题用于保留语言和限制。' search_round=1 supervisor_round=- queries=3 sources=14 findings=0 elapsed=0.00s done=False should_stop=False stop_reason='' citation_warnings=0 error_type=-
+2026-09-24 17:21:41 INFO run=q1-9bac3c5e node=extract_findings event=end topic='解释 LangGraph 中 StateGraph 的核心作用与设计目的，包括它如何管理状态、节点和边，以及与传统图执行框架的区别。' question='原始问题：LangGraph 的 StateGraph 有什么作用？\n当前子任务：解释 LangGraph 中 StateGraph 的核心作用与设计目的，包括它如何管理状态、节点和边，以及与传统图执行框架的区别。\n只完成当前子任务，原始问题用于保留语言和限制。' search_round=1 supervisor_round=- queries=3 sources=14 findings=6 elapsed=7.02s done=False should_stop=False stop_reason='' citation_warnings=0 error_type=-
+2026-09-24 17:21:41 INFO run=q1-9bac3c5e node=review_research event=start topic='解释 LangGraph 中 StateGraph 的核心作用与设计目的，包括它如何管理状态、节点和边，以及与传统图执行框架的区别。' question='原始问题：LangGraph 的 StateGraph 有什么作用？\n当前子任务：解释 LangGraph 中 StateGraph 的核心作用与设计目的，包括它如何管理状态、节点和边，以及与传统图执行框架的区别。\n只完成当前子任务，原始问题用于保留语言和限制。' search_round=1 supervisor_round=- queries=3 sources=14 findings=6 elapsed=0.00s done=False should_stop=False stop_reason='' citation_warnings=0 error_type=-
+2026-09-24 17:21:43 INFO run=q1-9bac3c5e node=review_research event=end topic='解释 LangGraph 中 StateGraph 的核心作用与设计目的，包括它如何管理状态、节点和边，以及与传统图执行框架的区别。' question='原始问题：LangGraph 的 StateGraph 有什么作用？\n当前子任务：解释 LangGraph 中 StateGraph 的核心作用与设计目的，包括它如何管理状态、节点和边，以及与传统图执行框架的区别。\n只完成当前子任务，原始问题用于保留语言和限制。' search_round=1 supervisor_round=- queries=0 sources=14 findings=6 elapsed=2.83s done=True should_stop=True stop_reason='已有发现充分覆盖了 StateGraph 的核心作用、设计目的、状态管理、节点和边的组织，以及与传统图执行框架的区别。具体包括：StateGraph 通过共享状态进行节点通信，支持 reducer 注解聚合状态，用于创建循环图以支持代理运行时，作为低级编排框架管理有状态代理，允许混合确定性和 LLM 驱动步骤，以及作为核心类定义基于状态的有向图工作流。这些信息足以完成当前子任务。' citation_warnings=0 error_type=-
+2026-09-24 17:21:43 INFO run=q1-9bac3c5e node=create_plan event=start topic='说明 StateGraph 在构建有状态、多步骤 AI 工作流（如对话代理、任务编排）中的典型应用场景和优势。' question='原始问题：LangGraph 的 StateGraph 有什么作用？\n当前子任务：说明 StateGraph 在构建有状态、多步骤 AI 工作流（如对话代理、任务编排）中的典型应用场景和优势。\n只完成当前子任务，原始问题用于保留语言和限制。' search_round=- supervisor_round=- queries=0 sources=0 findings=0 elapsed=0.00s done=- should_stop=- stop_reason='' citation_warnings=0 error_type=-
+2026-09-24 17:21:45 INFO run=q1-9bac3c5e node=create_plan event=end topic='说明 StateGraph 在构建有状态、多步骤 AI 工作流（如对话代理、任务编排）中的典型应用场景和优势。' question='原始问题：LangGraph 的 StateGraph 有什么作用？\n当前子任务：说明 StateGraph 在构建有状态、多步骤 AI 工作流（如对话代理、任务编排）中的典型应用场景和优势。\n只完成当前子任务，原始问题用于保留语言和限制。' search_round=0 supervisor_round=- queries=3 sources=0 findings=0 elapsed=1.75s done=False should_stop=False stop_reason='' citation_warnings=0 error_type=-
+2026-09-24 17:21:45 INFO run=q1-9bac3c5e node=search event=start topic='说明 StateGraph 在构建有状态、多步骤 AI 工作流（如对话代理、任务编排）中的典型应用场景和优势。' question='原始问题：LangGraph 的 StateGraph 有什么作用？\n当前子任务：说明 StateGraph 在构建有状态、多步骤 AI 工作流（如对话代理、任务编排）中的典型应用场景和优势。\n只完成当前子任务，原始问题用于保留语言和限制。' search_round=0 supervisor_round=- queries=3 sources=0 findings=0 elapsed=0.00s done=False should_stop=False stop_reason='' citation_warnings=0 error_type=-
+2026-09-24 17:23:08 INFO run=q1-9bac3c5e node=search event=end topic='说明 StateGraph 在构建有状态、多步骤 AI 工作流（如对话代理、任务编排）中的典型应用场景和优势。' question='原始问题：LangGraph 的 StateGraph 有什么作用？\n当前子任务：说明 StateGraph 在构建有状态、多步骤 AI 工作流（如对话代理、任务编排）中的典型应用场景和优势。\n只完成当前子任务，原始问题用于保留语言和限制。' search_round=1 supervisor_round=- queries=3 sources=14 findings=0 elapsed=90.43s done=False should_stop=False stop_reason='' citation_warnings=0 error_type=-
+2026-09-24 17:23:08 INFO run=q1-9bac3c5e node=extract_findings event=start topic='说明 StateGraph 在构建有状态、多步骤 AI 工作流（如对话代理、任务编排）中的典型应用场景和优势。' question='原始问题：LangGraph 的 StateGraph 有什么作用？\n当前子任务：说明 StateGraph 在构建有状态、多步骤 AI 工作流（如对话代理、任务编排）中的典型应用场景和优势。\n只完成当前子任务，原始问题用于保留语言和限制。' search_round=1 supervisor_round=- queries=3 sources=14 findings=0 elapsed=0.00s done=False should_stop=False stop_reason='' citation_warnings=0 error_type=-
+2026-09-24 17:23:17 INFO run=q1-9bac3c5e node=extract_findings event=end topic='说明 StateGraph 在构建有状态、多步骤 AI 工作流（如对话代理、任务编排）中的典型应用场景和优势。' question='原始问题：LangGraph 的 StateGraph 有什么作用？\n当前子任务：说明 StateGraph 在构建有状态、多步骤 AI 工作流（如对话代理、任务编排）中的典型应用场景和优势。\n只完成当前子任务，原始问题用于保留语言和限制。' search_round=1 supervisor_round=- queries=3 sources=14 findings=6 elapsed=9.03s done=False should_stop=False stop_reason='' citation_warnings=0 error_type=-
+2026-09-24 17:23:17 INFO run=q1-9bac3c5e node=review_research event=start topic='说明 StateGraph 在构建有状态、多步骤 AI 工作流（如对话代理、任务编排）中的典型应用场景和优势。' question='原始问题：LangGraph 的 StateGraph 有什么作用？\n当前子任务：说明 StateGraph 在构建有状态、多步骤 AI 工作流（如对话代理、任务编排）中的典型应用场景和优势。\n只完成当前子任务，原始问题用于保留语言和限制。' search_round=1 supervisor_round=- queries=3 sources=14 findings=6 elapsed=0.00s done=False should_stop=False stop_reason='' citation_warnings=0 error_type=-
+2026-09-24 17:23:19 INFO run=q1-9bac3c5e node=review_research event=end topic='说明 StateGraph 在构建有状态、多步骤 AI 工作流（如对话代理、任务编排）中的典型应用场景和优势。' question='原始问题：LangGraph 的 StateGraph 有什么作用？\n当前子任务：说明 StateGraph 在构建有状态、多步骤 AI 工作流（如对话代理、任务编排）中的典型应用场景和优势。\n只完成当前子任务，原始问题用于保留语言和限制。' search_round=1 supervisor_round=- queries=0 sources=14 findings=6 elapsed=1.98s done=True should_stop=True stop_reason='已有发现充分说明了 StateGraph 在构建有状态、多步骤 AI 工作流中的典型应用场景（如多 Agent 协同、客户支持路由、长上下文记忆、代码生成执行）和优势（如结构化工作流、状态管理、可视化监控、可扩展性、类型安全），且来源包括官方博客和权威技术文章，足以完成当前子任务。' citation_warnings=0 error_type=-
+2026-09-24 17:23:19 INFO run=q1-9bac3c5e node=create_plan event=start topic='分析 StateGraph 的状态管理模式（如状态定义、更新机制、持久化）及其对工作流可靠性和可调试性的影响。' question='原始问题：LangGraph 的 StateGraph 有什么作用？\n当前子任务：分析 StateGraph 的状态管理模式（如状态定义、更新机制、持久化）及其对工作流可靠性和可调试性的影响。\n只完成当前子任务，原始问题用于保留语言和限制。' search_round=- supervisor_round=- queries=0 sources=0 findings=0 elapsed=0.00s done=- should_stop=- stop_reason='' citation_warnings=0 error_type=-
+2026-09-24 17:23:21 INFO run=q1-9bac3c5e node=create_plan event=end topic='分析 StateGraph 的状态管理模式（如状态定义、更新机制、持久化）及其对工作流可靠性和可调试性的影响。' question='原始问题：LangGraph 的 StateGraph 有什么作用？\n当前子任务：分析 StateGraph 的状态管理模式（如状态定义、更新机制、持久化）及其对工作流可靠性和可调试性的影响。\n只完成当前子任务，原始问题用于保留语言和限制。' search_round=0 supervisor_round=- queries=3 sources=0 findings=0 elapsed=1.73s done=False should_stop=False stop_reason='' citation_warnings=0 error_type=-
+2026-09-24 17:23:21 INFO run=q1-9bac3c5e node=search event=start topic='分析 StateGraph 的状态管理模式（如状态定义、更新机制、持久化）及其对工作流可靠性和可调试性的影响。' question='原始问题：LangGraph 的 StateGraph 有什么作用？\n当前子任务：分析 StateGraph 的状态管理模式（如状态定义、更新机制、持久化）及其对工作流可靠性和可调试性的影响。\n只完成当前子任务，原始问题用于保留语言和限制。' search_round=0 supervisor_round=- queries=3 sources=0 findings=0 elapsed=0.00s done=False should_stop=False stop_reason='' citation_warnings=0 error_type=-
+2026-09-24 17:24:08 INFO run=q1-9bac3c5e node=search event=end topic='分析 StateGraph 的状态管理模式（如状态定义、更新机制、持久化）及其对工作流可靠性和可调试性的影响。' question='原始问题：LangGraph 的 StateGraph 有什么作用？\n当前子任务：分析 StateGraph 的状态管理模式（如状态定义、更新机制、持久化）及其对工作流可靠性和可调试性的影响。\n只完成当前子任务，原始问题用于保留语言和限制。' search_round=1 supervisor_round=- queries=3 sources=15 findings=0 elapsed=52.03s done=False should_stop=False stop_reason='' citation_warnings=0 error_type=-
+2026-09-24 17:24:08 INFO run=q1-9bac3c5e node=extract_findings event=start topic='分析 StateGraph 的状态管理模式（如状态定义、更新机制、持久化）及其对工作流可靠性和可调试性的影响。' question='原始问题：LangGraph 的 StateGraph 有什么作用？\n当前子任务：分析 StateGraph 的状态管理模式（如状态定义、更新机制、持久化）及其对工作流可靠性和可调试性的影响。\n只完成当前子任务，原始问题用于保留语言和限制。' search_round=1 supervisor_round=- queries=3 sources=15 findings=0 elapsed=0.00s done=False should_stop=False stop_reason='' citation_warnings=0 error_type=-
+2026-09-24 17:24:17 INFO run=q1-9bac3c5e node=extract_findings event=end topic='分析 StateGraph 的状态管理模式（如状态定义、更新机制、持久化）及其对工作流可靠性和可调试性的影响。' question='原始问题：LangGraph 的 StateGraph 有什么作用？\n当前子任务：分析 StateGraph 的状态管理模式（如状态定义、更新机制、持久化）及其对工作流可靠性和可调试性的影响。\n只完成当前子任务，原始问题用于保留语言和限制。' search_round=1 supervisor_round=- queries=3 sources=15 findings=6 elapsed=9.35s done=False should_stop=False stop_reason='' citation_warnings=0 error_type=-
+2026-09-24 17:24:17 INFO run=q1-9bac3c5e node=review_research event=start topic='分析 StateGraph 的状态管理模式（如状态定义、更新机制、持久化）及其对工作流可靠性和可调试性的影响。' question='原始问题：LangGraph 的 StateGraph 有什么作用？\n当前子任务：分析 StateGraph 的状态管理模式（如状态定义、更新机制、持久化）及其对工作流可靠性和可调试性的影响。\n只完成当前子任务，原始问题用于保留语言和限制。' search_round=1 supervisor_round=- queries=3 sources=15 findings=6 elapsed=0.00s done=False should_stop=False stop_reason='' citation_warnings=0 error_type=-
+2026-09-24 17:24:20 INFO run=q1-9bac3c5e node=review_research event=end topic='分析 StateGraph 的状态管理模式（如状态定义、更新机制、持久化）及其对工作流可靠性和可调试性的影响。' question='原始问题：LangGraph 的 StateGraph 有什么作用？\n当前子任务：分析 StateGraph 的状态管理模式（如状态定义、更新机制、持久化）及其对工作流可靠性和可调试性的影响。\n只完成当前子任务，原始问题用于保留语言和限制。' search_round=1 supervisor_round=- queries=0 sources=15 findings=6 elapsed=2.31s done=True should_stop=True stop_reason='已有发现充分覆盖了状态定义（reducer 机制）、更新机制（update_state 行为）、持久化（Checkpointer、线程、持久性模式）及其对可靠性和可调试性的影响（自动保存、时间旅行、容错、人机交互）。无需进一步查询。' citation_warnings=0 error_type=-
+2026-09-24 17:24:20 INFO run=q1-9bac3c5e node=run_researchers event=end topic='-' question='LangGraph 的 StateGraph 有什么作用？' search_round=- supervisor_round=1 queries=0 sources=34 findings=18 elapsed=197.22s done=False should_stop=False stop_reason='' citation_warnings=0 error_type=-
+2026-09-24 17:24:20 INFO run=q1-9bac3c5e node=supervisor_review event=start topic='-' question='LangGraph 的 StateGraph 有什么作用？' search_round=- supervisor_round=1 queries=0 sources=34 findings=18 elapsed=0.00s done=False should_stop=False stop_reason='' citation_warnings=0 error_type=-
+2026-09-24 17:24:21 INFO run=q1-9bac3c5e node=supervisor_review event=end topic='-' question='LangGraph 的 StateGraph 有什么作用？' search_round=- supervisor_round=1 queries=0 sources=34 findings=18 elapsed=1.44s done=True should_stop=True stop_reason='已有发现充分覆盖了 StateGraph 的核心作用、设计目的、典型应用场景、优势以及状态管理模式，能够完整回答原始问题。' citation_warnings=0 error_type=-
+2026-09-24 17:24:21 INFO run=q1-9bac3c5e node=write_report event=start topic='-' question='LangGraph 的 StateGraph 有什么作用？' search_round=- supervisor_round=1 queries=0 sources=34 findings=18 elapsed=0.00s done=True should_stop=True stop_reason='已有发现充分覆盖了 StateGraph 的核心作用、设计目的、典型应用场景、优势以及状态管理模式，能够完整回答原始问题。' citation_warnings=0 error_type=-
+2026-09-24 17:24:35 INFO run=q1-9bac3c5e node=write_report event=end topic='-' question='LangGraph 的 StateGraph 有什么作用？' search_round=- supervisor_round=1 queries=0 sources=34 findings=18 elapsed=14.46s done=True should_stop=True stop_reason='已有发现充分覆盖了 StateGraph 的核心作用、设计目的、典型应用场景、优势以及状态管理模式，能够完整回答原始问题。' citation_warnings=0 error_type=-
+2026-09-24 17:24:35 INFO run=q1-9bac3c5e node=validate_citations event=start topic='-' question='LangGraph 的 StateGraph 有什么作用？' search_round=- supervisor_round=1 queries=0 sources=34 findings=18 elapsed=0.00s done=True should_stop=True stop_reason='已有发现充分覆盖了 StateGraph 的核心作用、设计目的、典型应用场景、优势以及状态管理模式，能够完整回答原始问题。' citation_warnings=0 error_type=-
+2026-09-24 17:24:35 INFO run=q1-9bac3c5e node=validate_citations event=end topic='-' question='LangGraph 的 StateGraph 有什么作用？' search_round=- supervisor_round=1 queries=0 sources=34 findings=18 elapsed=0.00s done=True should_stop=True stop_reason='已有发现充分覆盖了 StateGraph 的核心作用、设计目的、典型应用场景、优势以及状态管理模式，能够完整回答原始问题。' citation_warnings=0 error_type=-
+2026-09-24 17:24:35 INFO run=q1-9bac3c5e stage=research status=ok elapsed=216.89s

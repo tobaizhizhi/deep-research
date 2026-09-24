@@ -1,0 +1,18 @@
+[project]
+name = "mini-deep-research"
+version = "0.1.0"
+description = "A simplified deep research agent for learning"
+requires-python = ">=3.11"
+dependencies = [
+    "langgraph",
+    "langchain-core",
+    "langchain-openai",
+    "pydantic",
+    "python-dotenv",
+    "tavily-python",
+    "pytest",
+    "markdown-it-py>=4.2.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
