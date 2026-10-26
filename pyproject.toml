@@ -12,6 +12,9 @@ dependencies = [
     "tavily-python",
     "pytest",
     "markdown-it-py>=4.2.0",
+    "psycopg[binary,pool]>=3.2,<4",
+    "redis>=5,<7",
+    "langgraph-checkpoint-postgres>=3,<4",
 ]
 
 [tool.pytest.ini_options]

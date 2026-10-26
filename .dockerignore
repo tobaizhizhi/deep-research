@@ -1,0 +1,11 @@
+.env
+.env.*
+.venv
+__pycache__
+.pytest_cache
+.ruff_cache
+outputs
+web/node_modules
+web/.next
+web/tsconfig.tsbuildinfo
+.git

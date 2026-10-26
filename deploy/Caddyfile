@@ -1,0 +1,10 @@
+{$APP_DOMAIN} {
+    encode gzip
+    reverse_proxy web:3000 {
+        # SSE must be delivered immediately, not buffered until a response completes.
+        flush_interval -1
+        transport http {
+            read_buffer 4096
+        }
+    }
+}

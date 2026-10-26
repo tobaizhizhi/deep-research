@@ -1,0 +1,50 @@
+{
+  "name": "deep-research-web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.33.4",
+  "engines": {
+    "node": ">=22.18.0 <25",
+    "pnpm": ">=10 <11"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "next typegen && tsc --noEmit",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "db:migrate": "node --conditions=react-server --import tsx scripts/migrate.ts",
+    "test": "node --import tsx --import ./tests/setup.ts --test tests/*.test.ts",
+    "test:db": "node --import tsx --import ./tests/setup.ts --test tests/*.integration.ts",
+    "test:http": "node --import tsx --import ./tests/setup.ts --test tests/tasks.http.ts"
+  },
+  "dependencies": {
+    "@auth/pg-adapter": "1.11.3",
+    "@fontsource-variable/noto-sans-sc": "5.3.0",
+    "@fontsource-variable/noto-serif-sc": "5.3.0",
+    "@next/env": "16.3.6",
+    "next": "16.3.6",
+    "next-auth": "5.0.0-beta.32",
+    "pg": "8.23.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "server-only": "0.0.1",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/pg": "8.23.1",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "ajv": "8.20.0",
+    "ajv-formats": "3.0.1",
+    "eslint": "^9.0.0",
+    "eslint-config-next": "16.3.6",
+    "prettier": "^3.0.0",
+    "tsx": "4.23.15",
+    "typescript": "^5.0.0"
+  }
+}

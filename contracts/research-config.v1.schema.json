@@ -1,0 +1,81 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://mini-deep-research.local/contracts/research-config.v1.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": 1,
+      "type": "integer"
+    },
+    "graph_mode": {
+      "const": "fixed"
+    },
+    "model_name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100,
+      "pattern": "^[a-zA-Z0-9][a-zA-Z0-9._:/-]*$(?![\\s\\S])"
+    },
+    "model_profile": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100,
+      "pattern": "^[a-zA-Z0-9][a-zA-Z0-9._:/-]*$(?![\\s\\S])"
+    },
+    "code_version": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100,
+      "pattern": "^[a-zA-Z0-9][a-zA-Z0-9._:/-]*$(?![\\s\\S])"
+    },
+    "prompt_version": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100,
+      "pattern": "^[a-zA-Z0-9][a-zA-Z0-9._:/-]*$(?![\\s\\S])"
+    },
+    "max_search_rounds": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "max_supervisor_rounds": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "max_concurrent_researchers": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 4
+    },
+    "max_results_per_query": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 10
+    },
+    "total_timeout_seconds": {
+      "type": "integer",
+      "minimum": 30,
+      "maximum": 1800
+    },
+    "enable_research_compression": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "schema_version",
+    "graph_mode",
+    "model_name",
+    "model_profile",
+    "code_version",
+    "prompt_version",
+    "max_search_rounds",
+    "max_supervisor_rounds",
+    "max_concurrent_researchers",
+    "max_results_per_query",
+    "total_timeout_seconds",
+    "enable_research_compression"
+  ]
+}

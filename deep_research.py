@@ -43,37 +43,81 @@ from mini_deep_research.models import (
 )
 from mini_deep_research.search import search_web, select_new_queries
 
+# 显式列出兼容入口，便于查找旧学习示例使用过的名字。
+__all__ = [
+    "Settings",
+    "create_model",
+    "load_settings",
+    "DelegationPlan",
+    "Finding",
+    "FindingSet",
+    "ResearchDecision",
+    "ResearcherOutput",
+    "ResearchPlan",
+    "ResearchState",
+    "SearchResult",
+    "SupervisorDecision",
+    "SupervisorState",
+    "create_plan",
+    "extract_findings",
+    "filter_findings",
+    "format_findings",
+    "research_graph",
+    "researcher_graph",
+    "review_research",
+    "route_after_review",
+    "route_after_supervisor_review",
+    "run_researchers",
+    "search",
+    "select_new_topics",
+    "supervisor_plan",
+    "supervisor_review",
+    "validate_citations",
+    "write_report",
+    "search_web",
+    "select_new_queries",
+    "error_info",
+    "log_node",
+    "logger",
+    "observed_node",
+    "setup_logging",
+    "demo_state",
+    "demo_search",
+    "demo_research",
+    "main",
+]
+
 
 def demo_state() -> None:
     settings = load_settings()
 
     plan = ResearchPlan(
-        research_goal = "了解 LangGraph",
-        queries = [
+        research_goal="了解 LangGraph",
+        queries=[
             "LangGraph 是什么？",
             "LangGraph 的主要功能有哪些？",
             "LangGraph 的应用场景有哪些？",
-        ]
+        ],
     )
 
     source = SearchResult(
-        title = "LangGraph 官方文档",
-        url = "https://www.langgraph.com/docs",
-        snippet = "LangGraph 是一个用于构建语言模型图的工具。",
-        content = "LangGraph 是一个用于构建语言模型图的工具。它可以帮助开发者将语言模型的各个组件以图的形式组织起来，从而更好的实现ai功能",
+        title="LangGraph 官方文档",
+        url="https://www.langgraph.com/docs",
+        snippet="LangGraph 是一个用于构建语言模型图的工具。",
+        content="LangGraph 是一个用于构建语言模型图的工具。它可以帮助开发者将语言模型的各个组件以图的形式组织起来，从而更好的实现ai功能",
     )
 
     # 把数据放进这次研究的共享状态。
-    state:ResearchState = {
-        "question" : "LangGraph 是什么？",
-        "research_goal" : plan.research_goal,
-        "queries" : plan.queries,
-        "sources" : [source],
-        "findings" : [],
-        "search_round" : 1,
-        "max_search_rounds" : settings.max_search_rounds,
-        "final_report" : "",
-        "error" : "",
+    state: ResearchState = {
+        "question": "LangGraph 是什么？",
+        "research_goal": plan.research_goal,
+        "queries": plan.queries,
+        "sources": [source],
+        "findings": [],
+        "search_round": 1,
+        "max_search_rounds": settings.max_search_rounds,
+        "final_report": "",
+        "error": "",
     }
 
     print("研究目标：", state["research_goal"])
@@ -81,8 +125,9 @@ def demo_state() -> None:
     print("计划的 JSON：")
     print(plan.model_dump_json(indent=2))
 
+
 async def demo_search() -> None:
-    
+
     settings = load_settings()
 
     sources = await search_web(
@@ -102,8 +147,6 @@ async def demo_search() -> None:
         print("内容：", source.content[:200])
 
 
-
-
 async def demo_research() -> None:
     setup_logging()
     run_id = uuid4().hex[:12]
@@ -118,6 +161,8 @@ async def demo_research() -> None:
             "question": "LangGraph 是什么，适合哪些应用场景？",
             "max_search_rounds": max_search_rounds,
             "max_supervisor_rounds": max_supervisor_rounds,
+            "max_concurrent_researchers": (settings.max_concurrent_researchers),
+            "enable_research_compression": settings.enable_research_compression,
         },
         config={
             "recursion_limit": 2 * max_supervisor_rounds + 10,
@@ -129,16 +174,9 @@ async def demo_research() -> None:
     assert result["stop_reason"].strip()
     assert result["final_report"].strip()
 
-    assert (
-        1
-        <= result["supervisor_round"]
-        <= max_supervisor_rounds
-    )
+    assert 1 <= result["supervisor_round"] <= max_supervisor_rounds
 
-    assert (
-        len(result["research_results"])
-        == len(result["completed_topics"])
-    )
+    assert len(result["research_results"]) == len(result["completed_topics"])
 
     print("\n实际委派批次数：", result["supervisor_round"])
 
@@ -155,7 +193,13 @@ async def demo_research() -> None:
         print("发现数量：", len(item["findings"]))
         print("子任务证据被判断为足够：", item["done"])
         print("停止原因：", item["stop_reason"])
+        print("是否生成有效研究简报：", item.get("compression_used", False))
+        if item.get("compression_warning"):
+            print("研究简报回退原因：", item["compression_warning"])
+        if item.get("compression_used"):
+            print(item["compressed_research"])
 
+    print("\nSupervisor 材料统计：", result.get("compression_metrics", []))
     print("\n总体证据被判断为足够：", result["done"])
     print("总体停止原因：", result["stop_reason"])
     print("剩余必要缺口：", result["gaps"])
@@ -164,16 +208,15 @@ async def demo_research() -> None:
 
     print("\n" + result["final_report"])
 
+
 def main() -> None:
-    settings=load_settings()
+    settings = load_settings()
 
     print("Mini Deep Research is ready.")
     print(f"Model: {settings.model_name}")
     print(f"Max search rounds: {settings.max_search_rounds}")
-    print(
-        "Max results per query: "
-        f"{settings.max_results_per_query}"
-    )
+    print(f"Max results per query: {settings.max_results_per_query}")
+
 
 if __name__ == "__main__":
     main()

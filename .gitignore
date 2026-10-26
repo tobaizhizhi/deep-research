@@ -1,6 +1,24 @@
+# Python 依赖与缓存
 .venv/
 __pycache__/
 *.py[cod]
 .pytest_cache/
 .ruff_cache/
+
+# 本机环境配置；模板可提交
 .env
+.env.*
+!.env.example
+!deploy/.env.production.example
+
+# 运行输出
+outputs/
+
+# Web 依赖与构建产物；详细规则另见 web/.gitignore
+node_modules/
+.next/
+*.tsbuildinfo
+
+# 编辑器与系统临时文件
+.DS_Store
+*.swp

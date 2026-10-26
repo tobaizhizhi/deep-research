@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://mini-deep-research.local/contracts/create-research.v1.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "question": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 4000,
+      "pattern": "^(?![\\s\\S]*\\u0000)[^ \\t\\n\\r\\f\\u000b](?:[\\s\\S]*[^ \\t\\n\\r\\f\\u000b])?$"
+    },
+    "requirements": {
+      "type": "string",
+      "maxLength": 2000,
+      "pattern": "^(?![\\s\\S]*\\u0000)(?:[^ \\t\\n\\r\\f\\u000b](?:[\\s\\S]*[^ \\t\\n\\r\\f\\u000b])?)?$"
+    },
+    "language": {
+      "enum": [
+        "auto",
+        "zh",
+        "en"
+      ]
+    },
+    "depth": {
+      "enum": [
+        "quick",
+        "standard"
+      ]
+    },
+    "parent_report_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "review_id": {
+      "type": "string",
+      "format": "uuid"
+    }
+  },
+  "required": [
+    "question",
+    "requirements",
+    "language",
+    "depth"
+  ]
+}

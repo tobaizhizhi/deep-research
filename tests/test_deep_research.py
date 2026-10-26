@@ -81,11 +81,13 @@ def test_completed_research_always_records_stop_reason(monkeypatch, reason):
             queries=["LangGraph 官方文档"],
         ),
         research.FindingSet: research.FindingSet(
-            findings=[research.Finding(
-                claim="LangGraph 用于编排有状态的工作流。",
-                evidence=source.content,
-                source_urls=[source.url],
-            )],
+            findings=[
+                research.Finding(
+                    claim="LangGraph 用于编排有状态的工作流。",
+                    evidence=source.content,
+                    source_urls=[source.url],
+                )
+            ],
             gaps=[],
         ),
         research.ResearchDecision: research.ResearchDecision(
@@ -102,15 +104,23 @@ def test_completed_research_always_records_stop_reason(monkeypatch, reason):
     search = AsyncMock(return_value=[source])
     monkeypatch.setattr(research, "create_model", lambda: model)
     monkeypatch.setattr(research, "search_web", search)
-    monkeypatch.setattr(research, "load_settings", lambda: SimpleNamespace(
-        max_search_rounds=2,
-        max_results_per_query=5,
-    ))
+    monkeypatch.setattr(
+        research,
+        "load_settings",
+        lambda: SimpleNamespace(
+            max_search_rounds=2,
+            max_results_per_query=5,
+        ),
+    )
 
-    result = asyncio.run(research.researcher_graph.ainvoke({
-        "question": "LangGraph 是什么？",
-        "max_search_rounds": 2,
-    }))
+    result = asyncio.run(
+        research.researcher_graph.ainvoke(
+            {
+                "question": "LangGraph 是什么？",
+                "max_search_rounds": 2,
+            }
+        )
+    )
     assert result["stop_reason"].strip()
     # 验证子图返回的停止条件，并拒绝只含空白的停止原因。
     if reason.strip():
@@ -122,8 +132,9 @@ def test_completed_research_always_records_stop_reason(monkeypatch, reason):
     assert result["queries"] == []
     assert result["search_round"] == 1
     search.assert_awaited_once()
-   # Researcher 子图不调用 Writer。
+    # Researcher 子图不调用 Writer。
     model.ainvoke.assert_not_awaited()
+
 
 def test_filter_findings_removes_invalid_sources():
     url = "https://example.com/a"
@@ -154,6 +165,7 @@ def test_filter_findings_removes_invalid_sources():
     assert accepted[0].claim == "有效发现"
     assert accepted[0].source_urls == [url]
 
+
 def test_validate_citations_detects_report_problems():
     url = "https://example.com/a"
 
@@ -172,16 +184,12 @@ def test_validate_citations_detects_report_problems():
 
     # 正文和 Sources 使用同一个有效链接，应无警告。
     state["final_report"] = (
-        f"测试发现。[资料 A]({url})\n\n"
-        f"## Sources\n- [资料 A]({url})"
+        f"测试发现。[资料 A]({url})\n\n## Sources\n- [资料 A]({url})"
     )
     assert research.validate_citations(state)["citation_warnings"] == []
 
     # 正文引用了资料，但 Sources 没有列出来。
-    state["final_report"] = (
-        f"测试发现。[资料 A]({url})\n\n"
-        "## Sources\n"
-    )
+    state["final_report"] = f"测试发现。[资料 A]({url})\n\n## Sources\n"
     warnings = research.validate_citations(state)["citation_warnings"]
     assert any("Sources 遗漏正文引用" in item for item in warnings)
 
@@ -198,3 +206,91 @@ def test_validate_citations_detects_report_problems():
     warnings = research.validate_citations(state)["citation_warnings"]
     assert "报告正文没有引用链接。" in warnings
     assert "报告缺少 ## Sources 章节。" in warnings
+
+@pytest.mark.parametrize("limit", [1, 2])
+def test_researcher_concurrency_limit(monkeypatch, limit):
+    """验证研究员确实能并发，且不超过上限。"""
+
+    async def scenario():
+        active = 0
+        peak = 0
+
+        # 达到指定并发数后通知测试。
+        ready = asyncio.Event()
+
+        # 由测试决定何时让任务完成。
+        release = asyncio.Event()
+
+        async def fake_run_one(state, topic):
+            nonlocal active, peak
+
+            active += 1
+            peak = max(peak, active)
+
+            try:
+                if active == limit:
+                    ready.set()
+
+                await release.wait()
+
+                return {
+                    "topic": topic,
+                    "findings": [],
+                    "sources": [],
+                    "gaps": [],
+                    "search_round": 0,
+                    "searched_queries": [],
+                    "done": False,
+                    "stop_reason": "仅测试并发调度",
+                }
+            finally:
+                active -= 1
+
+        monkeypatch.setattr(
+            research,
+            "run_one_researcher",
+            fake_run_one,
+        )
+
+        task = asyncio.create_task(
+            research.run_researcher_batch(
+                {"max_concurrent_researchers": limit},
+                ["任务 A", "任务 B", "任务 C"],
+            )
+        )
+
+        try:
+            # 测试有界等待，错误实现不会一直卡住。
+            await asyncio.wait_for(
+                ready.wait(),
+                timeout=2.0,
+            )
+
+            assert active == limit
+
+            release.set()
+
+            results = await asyncio.wait_for(
+                task,
+                timeout=2.0,
+            )
+        finally:
+            task.cancel()
+            await asyncio.gather(
+                task,
+                return_exceptions=True,
+            )
+
+        assert peak == limit
+        assert active == 0
+
+        assert [
+            result["topic"]
+            for result in results
+        ] == [
+            "任务 A",
+            "任务 B",
+            "任务 C",
+        ]
+
+    asyncio.run(scenario())

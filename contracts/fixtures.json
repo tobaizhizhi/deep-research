@@ -1,0 +1,615 @@
+[
+  {
+    "contract": "create-research",
+    "name": "ordinary",
+    "input": {
+      "question": "LangGraph 是什么？",
+      "requirements": "",
+      "language": "zh",
+      "depth": "standard"
+    },
+    "valid": true,
+    "normalized": {
+      "question": "LangGraph 是什么？",
+      "requirements": "",
+      "language": "zh",
+      "depth": "standard"
+    }
+  },
+  {
+    "contract": "create-research",
+    "name": "trim-defaults",
+    "input": {
+      "question": " \n问题\t"
+    },
+    "valid": true,
+    "normalized": {
+      "question": "问题",
+      "requirements": "",
+      "language": "auto",
+      "depth": "standard"
+    }
+  },
+  {
+    "contract": "create-research",
+    "name": "unicode-codepoints",
+    "input": {
+      "question": "😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀",
+      "requirements": "",
+      "language": "zh",
+      "depth": "standard"
+    },
+    "valid": true
+  },
+  {
+    "contract": "create-research",
+    "name": "empty",
+    "input": {
+      "question": " \t\n"
+    },
+    "valid": false
+  },
+  {
+    "contract": "create-research",
+    "name": "long",
+    "input": {
+      "question": "😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀",
+      "requirements": "",
+      "language": "zh",
+      "depth": "standard"
+    },
+    "valid": false
+  },
+  {
+    "contract": "create-research",
+    "name": "requirements",
+    "input": {
+      "question": "LangGraph 是什么？",
+      "requirements": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "language": "zh",
+      "depth": "standard"
+    },
+    "valid": false
+  },
+  {
+    "contract": "create-research",
+    "name": "language",
+    "input": {
+      "question": "LangGraph 是什么？",
+      "requirements": "",
+      "language": "fr",
+      "depth": "standard"
+    },
+    "valid": false
+  },
+  {
+    "contract": "create-research",
+    "name": "depth",
+    "input": {
+      "question": "LangGraph 是什么？",
+      "requirements": "",
+      "language": "zh",
+      "depth": "unlimited"
+    },
+    "valid": false
+  },
+  {
+    "contract": "create-research",
+    "name": "secret",
+    "input": {
+      "question": "LangGraph 是什么？",
+      "requirements": "",
+      "language": "zh",
+      "depth": "standard",
+      "api_key": "not-allowed"
+    },
+    "valid": false
+  },
+  {
+    "contract": "create-research",
+    "name": "identity",
+    "input": {
+      "question": "LangGraph 是什么？",
+      "requirements": "",
+      "language": "zh",
+      "depth": "standard",
+      "user_id": "35357918-59f0-4c3a-86e2-36ee82230108"
+    },
+    "valid": false
+  },
+  {
+    "contract": "create-research",
+    "name": "null",
+    "input": {
+      "question": "LangGraph 是什么？",
+      "requirements": null,
+      "language": "zh",
+      "depth": "standard"
+    },
+    "valid": false
+  },
+  {
+    "contract": "create-research",
+    "name": "number",
+    "input": {
+      "question": 12,
+      "requirements": "",
+      "language": "zh",
+      "depth": "standard"
+    },
+    "valid": false
+  },
+  {
+    "contract": "create-research",
+    "name": "url",
+    "input": {
+      "question": "LangGraph 是什么？",
+      "requirements": "",
+      "language": "zh",
+      "depth": "standard",
+      "base_url": "https://example.com"
+    },
+    "valid": false
+  },
+  {
+    "contract": "research-config",
+    "name": "standard",
+    "input": {
+      "schema_version": 1,
+      "graph_mode": "fixed",
+      "model_name": "deepseek-chat",
+      "model_profile": "deepseek-default-v1",
+      "code_version": "local-p2",
+      "prompt_version": "v1",
+      "max_search_rounds": 2,
+      "max_supervisor_rounds": 2,
+      "max_concurrent_researchers": 2,
+      "max_results_per_query": 5,
+      "total_timeout_seconds": 600,
+      "enable_research_compression": true
+    },
+    "valid": true
+  },
+  {
+    "contract": "research-config",
+    "name": "integer-valued-number",
+    "input": {
+      "schema_version": 1,
+      "graph_mode": "fixed",
+      "model_name": "deepseek-chat",
+      "model_profile": "deepseek-default-v1",
+      "code_version": "local-p2",
+      "prompt_version": "v1",
+      "max_search_rounds": 2,
+      "max_supervisor_rounds": 2,
+      "max_concurrent_researchers": 2,
+      "max_results_per_query": 5,
+      "total_timeout_seconds": 600,
+      "enable_research_compression": true
+    },
+    "valid": true
+  },
+  {
+    "contract": "research-config",
+    "name": "version",
+    "input": {
+      "schema_version": 2,
+      "graph_mode": "fixed",
+      "model_name": "deepseek-chat",
+      "model_profile": "deepseek-default-v1",
+      "code_version": "local-p2",
+      "prompt_version": "v1",
+      "max_search_rounds": 2,
+      "max_supervisor_rounds": 2,
+      "max_concurrent_researchers": 2,
+      "max_results_per_query": 5,
+      "total_timeout_seconds": 600,
+      "enable_research_compression": true
+    },
+    "valid": false
+  },
+  {
+    "contract": "research-config",
+    "name": "boolean_version",
+    "input": {
+      "schema_version": true,
+      "graph_mode": "fixed",
+      "model_name": "deepseek-chat",
+      "model_profile": "deepseek-default-v1",
+      "code_version": "local-p2",
+      "prompt_version": "v1",
+      "max_search_rounds": 2,
+      "max_supervisor_rounds": 2,
+      "max_concurrent_researchers": 2,
+      "max_results_per_query": 5,
+      "total_timeout_seconds": 600,
+      "enable_research_compression": true
+    },
+    "valid": false
+  },
+  {
+    "contract": "research-config",
+    "name": "infinite_budget",
+    "input": {
+      "schema_version": 1,
+      "graph_mode": "fixed",
+      "model_name": "deepseek-chat",
+      "model_profile": "deepseek-default-v1",
+      "code_version": "local-p2",
+      "prompt_version": "v1",
+      "max_search_rounds": 2,
+      "max_supervisor_rounds": 2,
+      "max_concurrent_researchers": 2,
+      "max_results_per_query": 5,
+      "total_timeout_seconds": 0,
+      "enable_research_compression": true
+    },
+    "valid": false
+  },
+  {
+    "contract": "research-config",
+    "name": "concurrency",
+    "input": {
+      "schema_version": 1,
+      "graph_mode": "fixed",
+      "model_name": "deepseek-chat",
+      "model_profile": "deepseek-default-v1",
+      "code_version": "local-p2",
+      "prompt_version": "v1",
+      "max_search_rounds": 2,
+      "max_supervisor_rounds": 2,
+      "max_concurrent_researchers": 5,
+      "max_results_per_query": 5,
+      "total_timeout_seconds": 600,
+      "enable_research_compression": true
+    },
+    "valid": false
+  },
+  {
+    "contract": "research-config",
+    "name": "boolean_integer",
+    "input": {
+      "schema_version": 1,
+      "graph_mode": "fixed",
+      "model_name": "deepseek-chat",
+      "model_profile": "deepseek-default-v1",
+      "code_version": "local-p2",
+      "prompt_version": "v1",
+      "max_search_rounds": true,
+      "max_supervisor_rounds": 2,
+      "max_concurrent_researchers": 2,
+      "max_results_per_query": 5,
+      "total_timeout_seconds": 600,
+      "enable_research_compression": true
+    },
+    "valid": false
+  },
+  {
+    "contract": "research-config",
+    "name": "string_integer",
+    "input": {
+      "schema_version": 1,
+      "graph_mode": "fixed",
+      "model_name": "deepseek-chat",
+      "model_profile": "deepseek-default-v1",
+      "code_version": "local-p2",
+      "prompt_version": "v1",
+      "max_search_rounds": "2",
+      "max_supervisor_rounds": 2,
+      "max_concurrent_researchers": 2,
+      "max_results_per_query": 5,
+      "total_timeout_seconds": 600,
+      "enable_research_compression": true
+    },
+    "valid": false
+  },
+  {
+    "contract": "research-config",
+    "name": "fraction",
+    "input": {
+      "schema_version": 1,
+      "graph_mode": "fixed",
+      "model_name": "deepseek-chat",
+      "model_profile": "deepseek-default-v1",
+      "code_version": "local-p2",
+      "prompt_version": "v1",
+      "max_search_rounds": 1.5,
+      "max_supervisor_rounds": 2,
+      "max_concurrent_researchers": 2,
+      "max_results_per_query": 5,
+      "total_timeout_seconds": 600,
+      "enable_research_compression": true
+    },
+    "valid": false
+  },
+  {
+    "contract": "research-config",
+    "name": "secret",
+    "input": {
+      "schema_version": 1,
+      "graph_mode": "fixed",
+      "model_name": "deepseek-chat",
+      "model_profile": "deepseek-default-v1",
+      "code_version": "local-p2",
+      "prompt_version": "v1",
+      "max_search_rounds": 2,
+      "max_supervisor_rounds": 2,
+      "max_concurrent_researchers": 2,
+      "max_results_per_query": 5,
+      "total_timeout_seconds": 600,
+      "enable_research_compression": true,
+      "api_key": "not-allowed"
+    },
+    "valid": false
+  },
+  {
+    "contract": "research-config",
+    "name": "bad_profile",
+    "input": {
+      "schema_version": 1,
+      "graph_mode": "fixed",
+      "model_name": "deepseek-chat",
+      "model_profile": "has spaces",
+      "code_version": "local-p2",
+      "prompt_version": "v1",
+      "max_search_rounds": 2,
+      "max_supervisor_rounds": 2,
+      "max_concurrent_researchers": 2,
+      "max_results_per_query": 5,
+      "total_timeout_seconds": 600,
+      "enable_research_compression": true
+    },
+    "valid": false
+  },
+  {
+    "contract": "research-config",
+    "name": "missing",
+    "input": {
+      "schema_version": 1,
+      "graph_mode": "fixed",
+      "model_name": "deepseek-chat",
+      "code_version": "local-p2",
+      "prompt_version": "v1",
+      "max_search_rounds": 2,
+      "max_supervisor_rounds": 2,
+      "max_concurrent_researchers": 2,
+      "max_results_per_query": 5,
+      "total_timeout_seconds": 600,
+      "enable_research_compression": true
+    },
+    "valid": false
+  },
+  {
+    "contract": "research-config",
+    "name": "boolean_string",
+    "input": {
+      "schema_version": 1,
+      "graph_mode": "fixed",
+      "model_name": "deepseek-chat",
+      "model_profile": "deepseek-default-v1",
+      "code_version": "local-p2",
+      "prompt_version": "v1",
+      "max_search_rounds": 2,
+      "max_supervisor_rounds": 2,
+      "max_concurrent_researchers": 2,
+      "max_results_per_query": 5,
+      "total_timeout_seconds": 600,
+      "enable_research_compression": "false"
+    },
+    "valid": false
+  },
+  {
+    "contract": "research-job",
+    "name": "ordinary",
+    "input": {
+      "schema_version": 1,
+      "message_id": "c3ef47c0-88cb-42eb-8a79-8fc836caec10",
+      "type": "research.run",
+      "task_id": "35357918-59f0-4c3a-86e2-36ee82230108",
+      "attempt_id": "604a354f-ce77-4d28-b5fb-cc4540f947a1",
+      "created_at": "2026-09-26T08:00:00Z"
+    },
+    "valid": true
+  },
+  {
+    "contract": "research-job",
+    "name": "fractional-time",
+    "input": {
+      "schema_version": 1,
+      "message_id": "c3ef47c0-88cb-42eb-8a79-8fc836caec10",
+      "type": "research.run",
+      "task_id": "35357918-59f0-4c3a-86e2-36ee82230108",
+      "attempt_id": "604a354f-ce77-4d28-b5fb-cc4540f947a1",
+      "created_at": "2024-02-29T08:00:00.123456Z"
+    },
+    "valid": true
+  },
+  {
+    "contract": "research-job",
+    "name": "version",
+    "input": {
+      "schema_version": 2,
+      "message_id": "c3ef47c0-88cb-42eb-8a79-8fc836caec10",
+      "type": "research.run",
+      "task_id": "35357918-59f0-4c3a-86e2-36ee82230108",
+      "attempt_id": "604a354f-ce77-4d28-b5fb-cc4540f947a1",
+      "created_at": "2026-09-26T08:00:00Z"
+    },
+    "valid": false
+  },
+  {
+    "contract": "research-job",
+    "name": "boolean_version",
+    "input": {
+      "schema_version": true,
+      "message_id": "c3ef47c0-88cb-42eb-8a79-8fc836caec10",
+      "type": "research.run",
+      "task_id": "35357918-59f0-4c3a-86e2-36ee82230108",
+      "attempt_id": "604a354f-ce77-4d28-b5fb-cc4540f947a1",
+      "created_at": "2026-09-26T08:00:00Z"
+    },
+    "valid": false
+  },
+  {
+    "contract": "research-job",
+    "name": "uuid",
+    "input": {
+      "schema_version": 1,
+      "message_id": "c3ef47c0-88cb-42eb-8a79-8fc836caec10",
+      "type": "research.run",
+      "task_id": "bad-id",
+      "attempt_id": "604a354f-ce77-4d28-b5fb-cc4540f947a1",
+      "created_at": "2026-09-26T08:00:00Z"
+    },
+    "valid": false
+  },
+  {
+    "contract": "research-job",
+    "name": "invalid_date",
+    "input": {
+      "schema_version": 1,
+      "message_id": "c3ef47c0-88cb-42eb-8a79-8fc836caec10",
+      "type": "research.run",
+      "task_id": "35357918-59f0-4c3a-86e2-36ee82230108",
+      "attempt_id": "604a354f-ce77-4d28-b5fb-cc4540f947a1",
+      "created_at": "2026-02-30T08:00:00Z"
+    },
+    "valid": false
+  },
+  {
+    "contract": "research-job",
+    "name": "timezone",
+    "input": {
+      "schema_version": 1,
+      "message_id": "c3ef47c0-88cb-42eb-8a79-8fc836caec10",
+      "type": "research.run",
+      "task_id": "35357918-59f0-4c3a-86e2-36ee82230108",
+      "attempt_id": "604a354f-ce77-4d28-b5fb-cc4540f947a1",
+      "created_at": "2026-09-26T08:00:00+00:00"
+    },
+    "valid": false
+  },
+  {
+    "contract": "research-job",
+    "name": "no_zone",
+    "input": {
+      "schema_version": 1,
+      "message_id": "c3ef47c0-88cb-42eb-8a79-8fc836caec10",
+      "type": "research.run",
+      "task_id": "35357918-59f0-4c3a-86e2-36ee82230108",
+      "attempt_id": "604a354f-ce77-4d28-b5fb-cc4540f947a1",
+      "created_at": "2026-09-26T08:00:00"
+    },
+    "valid": false
+  },
+  {
+    "contract": "research-job",
+    "name": "time_only",
+    "input": {
+      "schema_version": 1,
+      "message_id": "c3ef47c0-88cb-42eb-8a79-8fc836caec10",
+      "type": "research.run",
+      "task_id": "35357918-59f0-4c3a-86e2-36ee82230108",
+      "attempt_id": "604a354f-ce77-4d28-b5fb-cc4540f947a1",
+      "created_at": "08:00:00"
+    },
+    "valid": false
+  },
+  {
+    "contract": "research-job",
+    "name": "type",
+    "input": {
+      "schema_version": 1,
+      "message_id": "c3ef47c0-88cb-42eb-8a79-8fc836caec10",
+      "type": "research.cancel",
+      "task_id": "35357918-59f0-4c3a-86e2-36ee82230108",
+      "attempt_id": "604a354f-ce77-4d28-b5fb-cc4540f947a1",
+      "created_at": "2026-09-26T08:00:00Z"
+    },
+    "valid": false
+  },
+  {
+    "contract": "research-job",
+    "name": "extra",
+    "input": {
+      "schema_version": 1,
+      "message_id": "c3ef47c0-88cb-42eb-8a79-8fc836caec10",
+      "type": "research.run",
+      "task_id": "35357918-59f0-4c3a-86e2-36ee82230108",
+      "attempt_id": "604a354f-ce77-4d28-b5fb-cc4540f947a1",
+      "created_at": "2026-09-26T08:00:00Z",
+      "user_id": "35357918-59f0-4c3a-86e2-36ee82230108"
+    },
+    "valid": false
+  },
+  {
+    "contract": "research-config",
+    "name": "trailing-newline",
+    "input": {
+      "schema_version": 1,
+      "graph_mode": "fixed",
+      "model_name": "deepseek-chat\n",
+      "model_profile": "deepseek-default-v1",
+      "code_version": "local-p2",
+      "prompt_version": "v1",
+      "max_search_rounds": 2,
+      "max_supervisor_rounds": 2,
+      "max_concurrent_researchers": 2,
+      "max_results_per_query": 5,
+      "total_timeout_seconds": 600,
+      "enable_research_compression": true
+    },
+    "valid": false
+  },
+  {
+    "contract": "research-job",
+    "name": "uuid-trailing-newline",
+    "input": {
+      "schema_version": 1,
+      "message_id": "c3ef47c0-88cb-42eb-8a79-8fc836caec10",
+      "type": "research.run",
+      "task_id": "35357918-59f0-4c3a-86e2-36ee82230108\n",
+      "attempt_id": "604a354f-ce77-4d28-b5fb-cc4540f947a1",
+      "created_at": "2026-09-26T08:00:00Z"
+    },
+    "valid": false
+  },
+  {
+    "contract": "research-job",
+    "name": "timestamp-trailing-newline",
+    "input": {
+      "schema_version": 1,
+      "message_id": "c3ef47c0-88cb-42eb-8a79-8fc836caec10",
+      "type": "research.run",
+      "task_id": "35357918-59f0-4c3a-86e2-36ee82230108",
+      "attempt_id": "604a354f-ce77-4d28-b5fb-cc4540f947a1",
+      "created_at": "2026-09-26T08:00:00Z\n"
+    },
+    "valid": false
+  },
+  {
+    "contract": "research-job",
+    "name": "year-zero",
+    "input": {
+      "schema_version": 1,
+      "message_id": "c3ef47c0-88cb-42eb-8a79-8fc836caec10",
+      "type": "research.run",
+      "task_id": "35357918-59f0-4c3a-86e2-36ee82230108",
+      "attempt_id": "604a354f-ce77-4d28-b5fb-cc4540f947a1",
+      "created_at": "0000-01-01T00:00:00Z"
+    },
+    "valid": false
+  },
+  {
+    "contract": "create-research",
+    "name": "nul-question",
+    "input": {"question":"a\u0000b", "requirements":"", "language":"auto", "depth":"standard"},
+    "valid": false
+  },
+  {
+    "contract": "create-research",
+    "name": "nul-requirements",
+    "input": {"question":"a", "requirements":"\u0000", "language":"auto", "depth":"standard"},
+    "valid": false
+  }
+]
